@@ -1,0 +1,114 @@
+// :host {
+//     --background: #f1f5f8;
+//     background: #f1f5f8;
+// }
+
+ion-header {
+  ion-toolbar {
+    --background: #f1f5f8;
+    background: #f1f5f8;
+    padding: 0 10px;
+    ion-avatar {
+      --border-radius: 40%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+ion-content {
+  ion-item {
+    --background: #f1f5f8;
+    background: #f1f5f8;
+    padding: 0 10px;
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      background: #ffffff;
+      box-shadow: 7px 7px 20px #dbdfe2, -7px -7px 20px #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 18px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+  .main {
+    background: linear-gradient(
+      90deg,
+      rgba(43, 90, 148, 1) 0%,
+      rgba(45, 1, 229, 1) 35%,
+      rgba(45, 112, 229, 1) 100%
+    );
+    border-radius: 28px 28px 0 0;
+    padding-top: 18px;
+    .header {
+      color: #ffffff;
+    }
+    .label {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+    .slides {
+      padding: 4px 10px 20px 10px;
+      ion-card {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 14px;
+        padding: 14px;
+        --background: #3880ff;
+        ion-label {
+          font-size: 22px;
+          color: #fff;
+          ion-icon {
+            font-size: 20px;
+          }
+        }
+        ion-card-content {
+          padding: 0px 8px;
+          ion-col {
+            padding: 0 12px;
+            div {
+              background: #fff;
+              // img {
+              //     width: 64.33px;
+              //     height: 64.33px;
+              // }
+            }
+            .bgText {
+              background: #21458f;
+              color: #fff;
+              width: 100%;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .container {
+      padding: 6px 20px;
+      color: #ffffff;
+      ion-item {
+        --background: rgba(255, 255, 255, .1);
+        background: rgba(255, 255, 255, .1);
+        padding: 0;
+        margin: 14px 0;
+        --border-radius: 14px;
+        color: #ffffff;
+        ion-label {
+          padding: 6px 0;
+          h4 {
+            font-weight: 600;
+            font-size: 16px;
+          }
+          h6 {
+            color: rgba(255, 255, 255, 0.66);
+          }
+        }
+      }
+    }
+  }
+}

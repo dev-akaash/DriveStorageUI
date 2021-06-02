@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  slideOpts = {
+    slidesPerView: 1.5
+  };
+
+  constructor(
+    private router: Router
+  ) {}
+
+  onDrive() {
+    this.router.navigateByUrl('/drive');
+  }
 
 }
